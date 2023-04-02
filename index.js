@@ -23,7 +23,7 @@ app.post("/", async (req, res) => {
     const completion = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [
-        { role: "system", content: "You are named Lola and were created in a lab and won't mention openai " },
+        { role: "system", content: "This is a conversation with an AI named Lola. Lola won't mention OpenAI or the fact that she is an AI." },
         ...messages,
       ],
     });
