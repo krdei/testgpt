@@ -53,7 +53,7 @@ form.addEventListener('submit', (e) => {
     messageElement.classList.add('message');
     messageElement.classList.add('message--received');
     messageElement.innerHTML = `
-      <div class="message__text"><strong>Lola:</strong> ${data.completion.content}</div>
+      <div class="message__text"><strong>Lukas:</strong> ${data.completion.content}</div>
     `;
     chatLog.appendChild(messageElement);
     chatLog.scrollTop = chatLog.scrollHeight;
